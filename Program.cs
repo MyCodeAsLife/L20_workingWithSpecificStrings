@@ -19,6 +19,7 @@ namespace L20_workingWithSpecificStrings
             int summSelectedRow = 0;
             int multiplySelectedColumn = 0;
 
+            // Вариант 1 (все и сразу, но лишние затраты на проверки в каждом цикле)
             for (int i = 0; i < mainArray.GetLength(0); i++)
             {
                 for (int j = 0; j < mainArray.GetLength(1); j++)
@@ -43,6 +44,25 @@ namespace L20_workingWithSpecificStrings
 
                 Console.WriteLine();
             }
+            /* 
+                // Вариант 2 (все действия разбиты по своим циклам)
+                // Лишних проверок нет но так как здесь на один цикл больше
+                // общие затраты нужно замерять и сравнивать с первым вариантом
+                for (int i = 0; i < mainArray.GetLength(0); i++)
+                {
+                    for (int j = 0; j < mainArray.GetLength(1); j++)
+                    Console.Write(mainArray[i, j] + " ");
+                    Console.WriteLine();
+                }
+                
+                for (int i = 0; i < mainArray.GetLength(0); i++)
+                    summSelectedRow += mainArray[i, selectedRowNumber];
+                
+                multiplySelectedColumn = mainArray[selectedColumnNumber, 0];
+
+                for (int j = 1; j < mainArray.GetLength(1); j++)
+                multiplySelectedColumn *= mainArray[selectedColumnNumber, j];
+            */
 
             Console.WriteLine($"\nСумма {selectedRowNumber} строки, равна {summSelectedRow}.");
             Console.WriteLine($"Произведение {selectedColumnNumber} столбца, равно {multiplySelectedColumn}.");
