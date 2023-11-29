@@ -53,6 +53,7 @@ namespace L20_workingWithSpecificStrings
                 {
                     for (int j = 0; j < mainArray.GetLength(1); j++)
                     {
+                        mainArray[i, j] = random.Next(minNumber, maxNumber + 1);
                         Console.Write(mainArray[i, j] + " ");
                     } 
 
