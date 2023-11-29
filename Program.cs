@@ -37,11 +37,14 @@ namespace L20_workingWithSpecificStrings
                             multiplySelectedColumn = mainArray[i, j];
                             continue;
                         }
+
                         multiplySelectedColumn *= mainArray[i, j];
                     }
                 }
+
                 Console.WriteLine();
             }
+
             /* 
                 // Вариант 2 (все действия разбиты по своим циклам)
                 // Лишних проверок нет но так как здесь на один цикл больше
