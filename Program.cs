@@ -63,7 +63,7 @@ namespace L20_workingWithSpecificStrings
                 multiplySelectedColumn = mainArray[selectedColumnNumber, 0];
 
                 for (int j = 1; j < mainArray.GetLength(1); j++)
-                multiplySelectedColumn *= mainArray[selectedColumnNumber, j];
+                    multiplySelectedColumn *= mainArray[selectedColumnNumber, j];
             */
 
             Console.WriteLine($"\nСумма {selectedRowNumber} строки, равна {summSelectedRow}.");
