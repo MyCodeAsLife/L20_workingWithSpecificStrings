@@ -55,6 +55,7 @@ namespace L20_workingWithSpecificStrings
                     {
                         Console.Write(mainArray[i, j] + " ");
                     } 
+
                     Console.WriteLine();
                 }
                 
