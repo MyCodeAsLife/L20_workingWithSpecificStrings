@@ -51,7 +51,9 @@ namespace L20_workingWithSpecificStrings
                 for (int i = 0; i < mainArray.GetLength(0); i++)
                 {
                     for (int j = 0; j < mainArray.GetLength(1); j++)
-                    Console.Write(mainArray[i, j] + " ");
+                    {
+                        Console.Write(mainArray[i, j] + " ");
+                    } 
                     Console.WriteLine();
                 }
                 
