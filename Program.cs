@@ -37,11 +37,9 @@ namespace L20_workingWithSpecificStrings
                             multiplySelectedColumn = mainArray[i, j];
                             continue;
                         }
-
                         multiplySelectedColumn *= mainArray[i, j];
                     }
                 }
-
                 Console.WriteLine();
             }
             /* 
@@ -65,7 +63,6 @@ namespace L20_workingWithSpecificStrings
                 for (int j = 1; j < mainArray.GetLength(1); j++)
                     multiplySelectedColumn *= mainArray[selectedColumnNumber, j];
             */
-
             Console.WriteLine($"\nСумма {selectedRowNumber} строки, равна {summSelectedRow}.");
             Console.WriteLine($"Произведение {selectedColumnNumber} столбца, равно {multiplySelectedColumn}.");
         }
